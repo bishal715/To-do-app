@@ -1,7 +1,51 @@
-This project was a practical exercise in building a modern, interactive single-page application using core web technologies. My goal was to create a responsive and user-friendly task manager that could handle dynamic data and persist user sessions.
+# Simple Todo App
 
-For the structure, I used HTML5, employing semantic elements like <header>, <footer>, and <ul> to create a logical and accessible document outline. I leveraged the data-* attribute to manage the state of the task filters, providing a clean way to link the UI to my JavaScript logic. Crucially, I also addressed accessibility by adding an aria-label to the icon-only button, ensuring that screen readers could interpret its function as "Add task."
+A clean, responsive, and user-friendly Todo application built with vanilla HTML, CSS, and JavaScript. This project demonstrates core web development skills by creating a dynamic single-page application that allows users to manage their daily tasks efficiently.
 
-To style the application, I utilized CSS3, starting with custom properties (variables) for the color scheme, which made the design system maintainable and easy to modify. I relied heavily on Flexbox to create a fully responsive layout that adapts seamlessly to different screen sizes. To enhance the user experience, I implemented smooth transition effects on interactive elements like buttons and list items. Advanced selectors and pseudo-classes such as :hover and :checked were used to provide immediate visual feedback, for example, by changing button colors or showing a strikethrough on completed tasks.
+---
 
-The application's dynamic functionality was powered entirely by JavaScript. I practiced extensive DOM manipulation to add, update, and delete tasks without reloading the page. All user actions, from button clicks to keyboard inputs, were handled through addEventListener. The core of the app was a single state array (todos), which I manipulated using modern methods like .map() and .filter() to toggle completion status or clear completed tasks. Finally, to ensure data persistence, I used the localStorage API, allowing users to close their browser and return to their saved list of tasks.
+## ✨ Features
+
+* **Add Tasks:** Quickly add new tasks to your list.
+* **Mark as Complete:** Toggle tasks between active and completed states with a single click.
+* **Filter Tasks:** View all tasks, only active tasks, or only completed tasks.
+* **Delete Tasks:** Remove individual tasks from the list.
+* **Clear Completed:** Instantly clear all completed tasks with one button.
+* **Persistent Storage:** Your tasks are saved in the browser's `localStorage`, so your list is preserved even after closing the tab.
+* **Responsive Design:** The layout is fully responsive and works beautifully on desktop, tablet, and mobile devices.
+* **Empty State:** A helpful message appears when there are no tasks to display for the current filter.
+
+---
+
+## 🛠️ Technologies Used
+
+* **HTML5:** For the structure and semantic markup of the application.
+* **CSS3:** For custom styling, responsive design (using Flexbox), and animations.
+* **JavaScript (ES6+):** For all the application logic, including DOM manipulation, event handling, and state management.
+
+---
+
+## 🚀 How to Run
+
+No special setup is required! Since this is a vanilla web project, you can run it directly in your browser.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd your-repository-name
+    ```
+3.  **Open `index.html`:**
+    Simply open the `index.html` file in your favorite web browser (like Chrome, Firefox, or Edge).
+
+---
+
+## 🔑 Key Concepts Implemented
+
+* **DOM Manipulation:** Dynamically creating, updating, and deleting HTML elements using JavaScript to reflect the current state of the task list.
+* **Event Handling:** Using `addEventListener` to manage user interactions like clicks and keyboard inputs.
+* **State Management:** Maintaining the application's state in a single JavaScript array (`todos`) and re-rendering the UI whenever the state changes.
+* **Local Storage:** Utilizing the browser's `localStorage` API to persist data across sessions, providing a seamless user experience.
+* **Accessibility:** Using semantic HTML and `aria-label` attributes to ensure the application is usable by screen readers.
